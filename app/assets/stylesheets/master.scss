@@ -23,7 +23,8 @@
 }
 
 .pagination {
-  background: white;
+  justify-content: center;
+ 	background: #92DEDA;
   cursor: default;
   height: 22px;
   a, span, em {
@@ -38,33 +39,36 @@
   .current {
     font-style: normal;
     font-weight: bold;
-    background: #2e6ab1;
+    background: image_url('cartographer.png');
     color: white;
-    border: 1px solid #2e6ab1;
+    border: 1px solid white;
   }
   a {
-    text-decoration: none;
-    color: #105cb6;
-    border: 1px solid #9aafe5;
+    font-style: normal;
+    font-weight: bold;
+    color: white;
+    background: image_url('cartographer.png');
+    border: 1px solid white;
     &:hover, &:focus {
-      color: #000033;
-      border-color: #000033;
+      color: white;
+      border-color: white;
     }
   }
   .page_info {
-    background: #2e6ab1;
+    background: #303033;
     color: white;
     padding: 0.4em 0.6em;
     width: 22em;
     margin-bottom: 0.3em;
     text-align: center;
     b {
-      color: #000033;
+      color: #1d1d1e;
       background: #2e6ab1 + 60;
       padding: 0.1em 0.25em;
     }
   }
 }
+
 
 body {
 	background: image_url('mochaGrunge.png');
