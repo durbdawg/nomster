@@ -17,10 +17,14 @@
 	background: image_url('cartographer.png');
 }
 
-.navbar-inverse .navbar-brand {
+.navbar-light .navbar-brand {
 	color: #92DEDA;
 	font-family: 'chunkfiveroman', sans-serif;
 	font-size: 26px;
+}
+
+.navbar-toggler navbar-toggler-right {
+	color: #92DEDA;
 }
 
 .pagination {
