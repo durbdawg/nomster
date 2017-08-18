@@ -1,10 +1,8 @@
 class CreatePlaces < ActiveRecord::Migration[5.0]
+  
   def change
-    create_table :places do |t|
-    	t.string :name
-    	t.text :description
-    	t.string :address
-     	t.timestamps
-    end
+    add_column :places, :user_id, :integer
+    add_index :places, :user_id
   end
+  
 end
