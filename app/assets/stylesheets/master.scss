@@ -17,14 +17,14 @@
 	background: image_url('cartographer.png');
 }
 
+.nav-color {
+	color: #92DEDA;
+}
+
 .navbar-light .navbar-brand {
 	color: #92DEDA;
 	font-family: 'chunkfiveroman', sans-serif;
 	font-size: 26px;
-}
-
-.navbar-toggler navbar-toggler-right {
-	color: #92DEDA;
 }
 
 .pagination {
@@ -73,7 +73,6 @@
     }
   }
 }
-
 
 body {
 	background: image_url('mochaGrunge.png');
