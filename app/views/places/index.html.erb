@@ -1,7 +1,7 @@
 <%= will_paginate @places, previous_label: h("<"), next_label: h(">") %>
 
 <% @places.each do |place| %>
-	<div class="booyah-box col-xs-10 offset-1">
+	<div class="booyah-box col-10 offset-1">
 		<h1><%= link_to place.name, place_path(place) %></h1><br />
 		<i><%= place.address %></i><br /><br />
 		<p><%= place.description %></p><br />
