@@ -43,14 +43,6 @@
   <br class="clear" />	
 </div>
 
-<div class="clear"></div>
-<%= simple_form_for @comment, url: place_comments_path(@place) do |f| %>
-  <%= f.input :message %>
-  <%= f.input :rating, as: :select, collection: Comment::RATINGS %>
-
-  <%= f.submit "Add a Comment", class: 'btn btn-primary' %>
-<% end %>
-
 <!-- Comment Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -75,12 +67,18 @@
   </div>
 </div>
 
-<div class="col-10 offset-1">
-<h1 class="float-left">Comments</h1>
-<!-- Button trigger comments modal -->
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-  Add a comment
-</button>
+<div class="row">
+  <div class="col-6 offset-1">
+    <!-- Button trigger comments modal -->
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+      Add a comment
+    </button>
+
+    <!-- Button trigger photo modal -->
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+      Add a photo
+    </button>
+  </div>
 </div>
 
 <div class="clear"></div>
@@ -100,12 +98,6 @@
 </div>
 
 <div class="clear"></div>
-
-
-<!-- Button trigger photo modal -->
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-  Add a photo
-</button>
 
 <!-- Photo Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
