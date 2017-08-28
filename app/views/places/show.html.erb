@@ -70,28 +70,29 @@
   </div>
 </div>
 
-<div class="col-10 offset-1">
+<div class="booyah-box col-10 offset-1">
   <h1 class="float-left">Comments</h1>
     <!-- Button trigger comments modal -->
-    <button type="button" class="btn btn-primary btn-lg float-right" data-toggle="modal" data-target="#myModal">
+    <button type="button" class="btn btn-primary btn-md float-right" data-toggle="modal" data-target="#myModal">
       Add a comment
     </button>
-</div>
 
-<div class="clear"></div>
 
-<div class="row">
-  <% @place.comments.each do |comment| %>
-    <div class="col-12 col-sm-6">
-      <blockquote>
-        <% if comment.humanized_rating.present? %>
-          <b><%= comment.rating %></b> -
-        <% end %>
-        <%= comment.message %>
-        <small><%= comment.user.email %></small>
-      </blockquote>
-    </div>
-  <% end %>
+  <div class="clear"></div>
+
+  <div class="row">
+    <% @place.comments.each do |comment| %>
+      <div class="col-12 col-sm-6">
+        <blockquote>
+          <% if comment.humanized_rating.present? %>
+            <b><%= comment.rating %></b> -
+          <% end %>
+          <%= comment.message %>
+          <small><%= comment.user.email %></small>
+        </blockquote>
+      </div>
+    <% end %>
+  </div>
 </div>
 
 <div class="clear"></div>
@@ -120,25 +121,29 @@
   </div>
 </div>
 
-<div class="col-10 offset-1">
+<div class="booyah-box col-10 offset-1">
   <h1 class="float-left">Photos</h1>
     <!-- Button trigger photo modal -->
-    <button type="button" class="btn btn-primary btn-lg float-right" data-toggle="modal" data-target="#myPhotoModal">
+    <button type="button" class="btn btn-primary btn-md float-right" data-toggle="modal" data-target="#myPhotoModal">
       Add a photo
     </button>
-</div>
 
 
-<div class="clear"></div>
+  <div class="clear"></div>
 
-<div class="row">
-  <% @place.photos.each do |photo| %>
-    <div class="booyah-box col-10 offset-1">
-      <%= image_tag photo.picture %>
-      <br />
-      <%= photo.caption %>
+  <div class="row">
+    <div class="col-12">
+      <div class="photo">
+        <img class="img-fluid center-block image" src="#">
+          <% @place.photos.each do |photo| %>
+            <%= image_tag photo.picture %>
+            <br />
+            <%= photo.caption %>
+          <% end %>
+        </div>
+      </div>
     </div>
-  <% end %>
+  </div>
 </div>
 
 <div class="clear"></div>

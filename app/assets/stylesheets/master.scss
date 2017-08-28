@@ -57,6 +57,10 @@
 	font-size: 26px;
 }
 
+.float-right {
+  float: right !important;
+}
+
 .pagination {
   justify-content: center;
  	background: #92DEDA;
@@ -102,6 +106,19 @@
       padding: 0.1em 0.25em;
     }
   }
+}
+
+.photos-index {
+  width: 100%;
+  height: auto;
+  padding: .75rem;
+  margin-bottom: 2rem;
+  border-width: 1px; 
+  border-style: solid; 
+  border-color: rgba(0, 0, 0, 0.125);
+  border-image: initial;
+  position: relative;
+  margin: 0;
 }
 
 body {
