@@ -1,4 +1,4 @@
-
+<%= will_paginate @places, previous_label: h("<"), next_label: h(">") %>
 
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
@@ -28,8 +28,6 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-
-<%= will_paginate @places, previous_label: h("<"), next_label: h(">") %>
 
 <% @places.each do |place| %>
 	<div class="booyah-box col-10 offset-1">
